@@ -19,7 +19,7 @@
 ****************************************************************/
 function pairs(names) {
   
-  let names = names || [];
+  names = names || [];
   let random_names = [];
 
   while (names.length >1){
@@ -31,6 +31,8 @@ function pairs(names) {
   }
 
   return random_names
+
+}
  
  
 

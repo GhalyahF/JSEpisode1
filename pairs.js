@@ -18,23 +18,24 @@
 *       pairs() returns []
 ****************************************************************/
 function pairs(names) {
-
+  
+  let names = names || [];
   let random_names = [];
-  let rn;
 
-  for (rn=0 ; rn< names.length; rn++){
-  	random_names.push([names.getRandom(), names.getRandom()]);
+  while (names.length >1){
+    random_names.push([names.getRandom(), names.getRandom()]);
   }
-  if (names.length !== 0){
-  	random_names.push([names.getRandom()]);
+
+  if (names.length) {
+    random_names.push([names[0]]);
   }
-  if (names === ''){
-  	return [];
-  }
-  return (random_names);
-}
+
+  return random_names
+ 
+ 
 
 module.exports = pairs;
+
 
 /**********************************************
 * READ ME!!!!

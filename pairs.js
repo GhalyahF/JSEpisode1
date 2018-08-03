@@ -25,7 +25,7 @@ function pairs(names) {
   while (names.length >1){
     random_names.push([names.getRandom(), names.getRandom()]);
   }
-
+//?
   if (names.length) {
     random_names.push([names[0]]);
   }
